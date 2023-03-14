@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.33%;
+}       
+body{
+    font-size: 1.5rem;
+    background-color: #f1f2f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    width: 80vw;
+    margin:5rem auto;
+
+}
+
+.top-cont{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+.toggle-cont{
+    width: 6rem;
+    border-radius: 3rem;
+    height: 2.3rem;
+    background-color: #515763;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+   
+}
+.toggle-cont .toggle-nob{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin: .5rem;
+}
+.side-cont{
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+.top-cont p{
+    font-size: 2rem;
+}
+.form-main-cont{
+    display: flex;
+    border-top: solid .1rem #e0e1e5;
+}
+
+
+.form-main-cont form{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10rem auto;
+}
+
+.form-main-cont form > input{
+    height: 5rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: .7rem;
+    padding: 1rem;
+}
+.form-main-cont form input[type="submit"]{
+   background-color: #515763;
+   color: #fff;
+}
+
+.card-input{
+    display: flex;
+    width: 40rem;
+    background-color: #fff;
+    height: 5rem;
+    border-radius: .7rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-input input{
+    height: 5rem;
+    border: none;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+.input-date{
+    width: 3rem;
+    text-align: center;
+}
+.packages{
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.package{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+    background-color: #fff;
+    height: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color:#515763 ;
+    border-radius: 1rem;
+    animation:  2s ease all;
+    border: .3rem solid #51576300;
+}
+.package:hover {
+    border: .3rem solid #515763;
+}
+.package span p:last-child{
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+}
+.package span p:first-child{
+    text-transform: uppercase;
+    color: #515763;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.package span p:last-child span:first-child{
+    font-size: 2.5rem;
+    font-weight: 600; 
+}
+
+.package span p:last-child span:last-child{
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+.checked{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: inline-block;
+    background-color: #515763;
+    color:#fff;
+    text-align:center ;
+    opacity: 0;
+}
+
+@media screen and (max-width: 60rem){
+    .form-main-cont{
+    flex-direction: column;
+  
+}
+
+}
+
+.span-spacing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.active{
+    border: .3rem solid #515763;
+
+}
+
+.active .checked{
+    opacity: 1;
+}

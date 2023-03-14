@@ -1,0 +1,5 @@
+Get the container element 
+Get all buttons with class="btn" inside the container 
+Loop through the buttons and add the active class to the current
+if there's no active class
+Add the active class to the current/clicked button

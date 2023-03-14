@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>storage</title>
+</head>
+<body>
+    <main><div class="top-cont">
+        <p>Choose the amount of storage <br> that's right for you.</p>
+        <div class="side-cont">
+            Bill Yearly
+            <div class="toggle-cont">
+                <div class="toggle-nob"></div>
+            </div>
+            Bill Monthly
+        </div>
+    </div>
+        <div class="form-main-cont">
+            <form class="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="card-input">
+                    <input type="number" placeholder="Cardnumber" oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)" minlength="16" maxlength="16" name="" id="">
+            
+                        <input type="number" class="input-date" placeholder="MM" oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)" minlength="2" maxlength="2" name="" id="">/
+                    <input type="number" class="input-date" placeholder="YY" oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"   minlength="2" maxlength="2">
+                    <input type="number" class="input" placeholder="CSV" oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"   minlength="3" maxlength="3">
+                </div>
+                <input type="submit" value="CREATE ACCOUNT">
+            </form>                                                                                                                                                                                                                                                                                                                                                                             
+            <ul id="packages" class="packages">
+            
+                <li class="package">
+                        <span class="">
+                            <p>essential</p>
+                            <p><span >200</span> <span>GB</span> of storage</p>
+                        </span>
+                        <span class="span-spacing">
+                            <span class="checked">✔</span>
+                            <p>$10 / mo</p>
+                        </span>
+                </li>
+            
+                <li class="package active">
+                
+                        <span>
+                            <p>Pro</p>
+                            <p><span>1</span> <span>TB</span> of storage</p>
+                        </span>
+                        <span class="span-spacing">
+                            <span class="checked">✔</span>
+                            <p>$10 / mo</p>
+                        </span>
+                    
+                </li>
+            
+                <li class="package">
+                
+                        <span>
+                            <p>Premium</p>
+                            <p><span>2</span> <span>TB</span> of storage</p>
+                        </span>
+                        <span class="span-spacing">
+                            <span class="checked">✔</span>
+                            <p>$10 / mo</p>
+                        </span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
